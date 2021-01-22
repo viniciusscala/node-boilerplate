@@ -15,6 +15,10 @@ appUserRouter.post('/', async (req, res) => {
   }
 });
 
+appUserRouter.get('/test', async (req, res) => {
+  res.send("foi");
+});
+
 appUserRouter.get('/', async (req, res) => {
   res.json(await getRepository(AppUser).find());
 });
