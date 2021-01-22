@@ -1,9 +1,9 @@
-import { User } from '@models/User'
+import AppUser from '@models/AppUser'
 
 test('it should be ok', () => {
-  const user = new User()
+  const appUser = new AppUser()
 
-  user.name = 'Diego'
+  appUser.name = 'Diego';
 
-  expect(user.name).toEqual('Diego')
+  expect(appUser.name).toEqual('Diego')
 })
