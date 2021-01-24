@@ -5,7 +5,8 @@ USER node
 WORKDIR /home/node/
 
 # Install dependencies
-COPY package.json .
+COPY package.json ./
+COPY yarn.lock ./
 RUN yarn install
 
 # Bundle app source
@@ -13,4 +14,4 @@ COPY . .
 
 # Exports
 EXPOSE 3001
-CMD [ "yarn", "start ]
+CMD [ "yarn", "dev" ]

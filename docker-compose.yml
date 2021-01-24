@@ -4,10 +4,10 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: .
-    command: yarn start
+    command: yarn dev
     volumes:
       - .:/home/node
-      - ./node_modules:/home/node/node_modules
+      - /home/node/node_modules
     stdin_open: true
     tty: true
     ports:
