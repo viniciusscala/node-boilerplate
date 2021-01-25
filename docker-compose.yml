@@ -1,6 +1,7 @@
 version: "3"
 services:
   server:
+    container_name: boilerplate-server
     build:
       dockerfile: ./Dockerfile
       context: .
