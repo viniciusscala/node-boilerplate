@@ -4,6 +4,10 @@ dist
 .ssh
 .vscode-server
 .gitconfig
+.yarn
+.cache
+.config
+.npm
 
 # insyc
 *.insync*
