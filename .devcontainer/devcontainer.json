@@ -21,7 +21,11 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": null
+		"editor.formatOnSave": false,
+  	"editor.codeActionsOnSave": {
+      "source.fixAll": true
+  	},
+  	"eslint.alwaysShowStatus": true
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
